@@ -1,0 +1,397 @@
+<html>
+
+<head>
+    <title>2022</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container wef text-center mainwindowcontainer">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/2022/AuthPIC.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Select a game</h5>
+                                <p class="card-text">Create a new game or join a existing one!</p>
+                                <a href="#" class="btn btn-primary btncreate">Create new</a>
+                                <a href="#" class="btn btn-primary btnjoin">Join one</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container wef text-center maincreateone">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/2022/AuthPIC.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Create a new one</h5>
+                                <p class="card-text">Create a new room</p>
+                                <div class="row g-2">
+                                    <div class="col-auto">
+                                        <label for="inputPassword2" class="visually-hidden">Name</label>
+                                        <input type="text" class="form-control" id="crtnwrm" placeholder="Name">
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit"
+                                            class="btn btn-primary mb-3 createroombutton">Create</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container wef text-center mainlistone">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card mb-3" style="width: 18rem;">
+                    <img src="/2022/AuthPIC.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Choose room</h5>
+                        <p class="card-text">Please choose a room</p>
+                    </div>
+                    <ul class="list-group list-group-flush listitem">
+                        <li class="list-group-item">One moment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container wef text-center mainloadingone">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card mb-3" style="width: 18rem;">
+                    <img src="/2022/AuthPIC.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Loading</h5>
+                        <p class="card-text">Please wait for your opponent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container wef text-center conest">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card mb-3" style="width: 18rem;">
+                    <img src="/2022/AuthPIC.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Connection established</h5>
+                        <p class="card-text">We are happy to announce you have a opponent!</p>
+                        <p class="card-text">Please check your character and press Start!</p>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                value="blue">
+                            <label class="form-check-label" for="inlineRadio1"><img height="40" id="iblue" src="/2022/santablue.png"></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                value="red">
+                            <label class="form-check-label" for="inlineRadio2"><img height="40" id="ired" src="/2022/santared.png"></label>
+                        </div>
+                        <a href="#" class="btn btn-primary btnstartgame">Start!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container wef text-center maingame">
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+                <div class="card mb-3" style="width: 18rem;">
+                    <img src="/2022/AuthPIC.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title score">0 - 0</h5>
+                        <p class="card-text">Score in the goal of your opponent</p>
+                        <p class="card-text gamecanvas" style=""></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="/2022/jquery-3.5.1.slim.min.js"></script>
+    <script>
+
+        function game_connection_ring(sendChannelA, receiveChannelA) {
+            $(".wef").hide();
+            $(".conest").show();
+            window.streamSEND = sendChannelA;
+            window.streamRECIEVE = receiveChannelA;
+            $(".btnstartgame").click(function(){
+                window.caracterselopt = $("[name='inlineRadioOptions']:checked").attr("value");
+                window.streamSEND.send(JSON.stringify({method:"selectcharacter",selectedCharacter:window.caracterselopt}));
+                window.streamSEND.send(JSON.stringify({method:"negociatescreen",screensize:{w:screen.width,h:screen.height}}));
+                $(".wef").hide();
+                $(".maingame").show();
+                $(".gamecanvas").html("");
+                $(".gamecanvas").append("<canvas id='idts'></canvas>");
+                window.maincharacter = {
+                    us: 0,
+                    them: 0
+                };
+                $("body").keydown(function(event){
+                    var ecode = event.originalEvent.code;
+                    event.preventDefault();
+                    if(ecode=="ArrowLeft"){
+                        window.maincharacter.us--;
+                    }
+                    if(ecode=="ArrowRight"){
+                        window.maincharacter.us++;
+                    }
+                    window.streamSEND.send(JSON.stringify({method:"movecharacter",charoff:window.maincharacter.us}));
+                });
+            });
+        }
+        function game_connection_message(datares) {
+            console.log("recieved message", datares);
+            var data = JSON.parse(datares);
+            if(data.method=="selectcharacter"){
+                window.caracterseloth = data.selectedCharacter;
+            }else if(data.method=="negociatescreen"){
+                if(data.screensize.w>screen.width){
+                    window.prefferedWith = screen.width;
+                }else{
+                    window.prefferedWith = data.screensize.w;
+                }
+                if(data.screensize.h>screen.height){
+                    window.prefferedHeight = screen.height;
+                }else{
+                    window.prefferedHeight = data.screensize.h;
+                }
+                window.prefferedWith /= 3;
+                window.prefferedHeight /= 3;
+                $("#idts").attr("width",window.prefferedWith);
+                $("#idts").attr("height",window.prefferedHeight);
+
+                window.setInterval(function(){
+                    var canvas = document.getElementById("idts");
+                    var ctx = canvas.getContext("2d");
+
+                    // clear everything
+                    ctx.fillStyle = "purple";
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                    // draw us
+                    ctx.drawImage(document.getElementById("i"+window.caracterselopt), window.maincharacter.us, 30, 20, 20);
+                    ctx.drawImage(document.getElementById("i"+window.caracterseloth), window.maincharacter.them, window.prefferedHeight-30, 20, 20);
+                },100);
+                
+            }else if(data.method=="movecharacter"){
+                window.maincharacter.them = charoff;
+            }
+        }
+
+        $(".wef ").hide();
+        $(".mainwindowcontainer").show();
+        $(".btncreate").click(function () {
+            $(".wef").hide();
+            $(".maincreateone").show();
+            $("#crtnwrm").focus();
+        });
+        $(".btnjoin").click(function () {
+            $(".wef").hide();
+            $(".mainlistone").show();
+            window.loadingitem = window.setInterval(function () {
+                $(".listitem").html("");
+                $.post("/2022/socket/socket.php", {
+
+                }, function (data) {
+                    $.each(data.data, function (i, dat) {
+                        $(".listitem").append('<li class="list-group-item" data-id="' + dat["id"] + '">' + dat["name"] + '</li>');
+                    });
+                    $(".list-group-item").click(function () {
+                        window.clearInterval(window.loadingitem);
+                        var roomname = $(this).data("id");
+                        var unique = Math.floor(100000 + Math.random() * 900000);
+                        $(".wef").hide();
+                        $(".mainloadingone").show();
+                        web_rtc_setup(unique, roomname, game_connection_ring, game_connection_message);
+                    });
+                }, "json");
+            }, 5000);
+        });
+        $(".createroombutton").click(function () {
+            var roomname = $("#crtnwrm").val();
+            $.post("/2022/socket/socket.php", { "roomname": roomname }, function (data) {
+                var unique = Math.floor(100000 + Math.random() * 900000);
+                $(".wef").hide();
+                $(".mainloadingone").show();
+                web_rtc_setup(unique, roomname, game_connection_ring, game_connection_message);
+            }, "json");
+        });
+
+
+        // special thanks for https://shanetully.com/2014/09/a-dead-simple-webrtc-example/ 
+        function web_rtc_setup(unique, roomid, onchannelopen, onchannelmessage) {
+            var answer = 0;
+            var pc = null
+            var localStream = null;
+            var ws = null;
+            var receiveChannel = null;
+            var sendChannel = null;
+
+            var configuration = {
+                'iceServers': [
+                    { 'urls': 'stun:stun.stunprotocol.org:3478' },
+                    { 'urls': 'stun:stun.l.google.com:19302' }
+                ]
+            };
+
+            try {
+                ws = new EventSource('/2022/socket/serverGet.php?room=' + roomid + '&unique=' + unique);
+            } catch (e) {
+                console.error("Could not create eventSource ", e);
+            }
+
+            ws.send = function send(message) {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState != 4) {
+                        return;
+                    }
+                    if (this.status != 200) {
+                        console.log("Error sending to server with message: " + message);
+                    }
+                };
+                xhttp.open('POST', '/2022/socket/serverPost.php?room=' + roomid + '&unique=' + unique, true);
+                xhttp.setRequestHeader("Content-Type", "Application/X-Www-Form-Urlencoded");
+                xhttp.send(message);
+            }
+
+            ws.onmessage = function (e) {
+                if (e.data.length < 3) {
+                    return;
+                }
+                if (e.data.includes("_MULTIPLEVENTS_")) {
+                    multiple = e.data.split("_MULTIPLEVENTS_");
+                    for (x = 0; x < multiple.length; x++) {
+                        var rg = multiple[x];
+                        if (rg.length > 3) {
+                            onsinglemessage(multiple[x]);
+                        }
+                    }
+                } else {
+                    onsinglemessage(e.data);
+                }
+            }
+
+
+            publish('client-call', null);
+
+            function onsinglemessage(data) {
+                console.log(data);
+                var package = JSON.parse(data);
+                var data = package.data;
+
+                switch (package.event) {
+                    case 'client-call':
+                        icecandidate(localStream);
+                        pc.createOffer({}).then(function (desc) {
+                            pc.setLocalDescription(desc).then(
+                                function () {
+                                    publish('client-offer', pc.localDescription);
+                                }
+                            ).catch(function (e) {
+                                console.log("Problem with publishing client offer" + e);
+                            });
+                        }).catch(function (e) {
+                            console.log("Problem while doing client-call: " + e);
+                        });
+                        break;
+                    case 'client-answer':
+                        if (pc == null) {
+                            console.error('Before processing the client-answer, I need a client-offer');
+                            break;
+                        }
+                        pc.setRemoteDescription(new RTCSessionDescription(data), function () { },
+                            function (e) {
+                                console.log("Problem while doing client-answer: ", e);
+                            });
+                        break;
+                    case 'client-offer':
+                        icecandidate(localStream);
+                        pc.setRemoteDescription(new RTCSessionDescription(data), function () {
+                            if (!answer) {
+                                pc.createAnswer(function (desc) {
+                                    pc.setLocalDescription(desc, function () {
+                                        publish('client-answer', pc.localDescription);
+                                    }, function (e) {
+                                        console.log("Problem getting client answer: ", e);
+                                    });
+                                }
+                                    , function (e) {
+                                        console.log("Problem while doing client-offer: ", e);
+                                    });
+                                answer = 1;
+                            }
+                        }, function (e) {
+                            console.log("Problem while doing client-offer2: ", e);
+                        });
+                        break;
+                    case 'client-candidate':
+                        if (pc == null) {
+                            console.error('Before processing the client-answer, I need a client-offer');
+                            break;
+                        }
+                        pc.addIceCandidate(new RTCIceCandidate(data), function () { },
+                            function (e) { console.log("Problem adding ice candidate: " + e); });
+                        break;
+                }
+            };
+
+            function icecandidate(localStream) {
+                pc = new RTCPeerConnection(configuration);
+                sendChannel = pc.createDataChannel("sendChannel");
+                pc.ondatachannel = function (event) {
+                    receiveChannel = event.channel;
+                    receiveChannel.onmessage = function (evt) {
+                        onchannelmessage(evt.data);
+                    };
+                    receiveChannel.onopen = function () {
+                        console.log("welcomechannel");
+                        ws.close();
+                        onchannelopen(sendChannel, receiveChannel);
+                    };
+                    receiveChannel.onclose = function () {
+                    };
+                };
+                pc.onicecandidate = function (event) {
+                    if (event.candidate) {
+                        publish('client-candidate', event.candidate);
+                    }
+                };
+            }
+
+            function publish(event, data) {
+                ws.send(JSON.stringify({
+                    event: event,
+                    data: data
+                }));
+            }
+        }
+
+    </script>
+</body>
+
+</html>
